@@ -39,7 +39,7 @@ def generate_txt(chunks):
     return '\n\n'.join([f"--- Block {i} ---\n{chunk}" for i, chunk in enumerate(chunks, 1)])
 
 # Streamlit UI
-st.title("Document Splitter App by Ronik 🚀")
+st.title("Document Splitter by Ronik 🚀")
 
 uploaded_file = st.file_uploader("Upload a file", type=['txt', 'pdf', 'docx'])
 max_chars = st.number_input("Maximum characters per chunk", 
