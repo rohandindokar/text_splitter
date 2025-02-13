@@ -2,6 +2,8 @@ import streamlit as st
 from PyPDF2 import PdfReader
 from docx import Document
 
+st.set_page_config(page_title="Text Splitter", page_icon="🚀")
+
 def extract_text_from_pdf(file):
     reader = PdfReader(file)
     text = ""
